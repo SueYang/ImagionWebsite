@@ -2910,7 +2910,7 @@
                 }
                 var node = ctr + i, previewId = previewInitId + "-" + node, file = files[i], fSizeKB, j, msg,
                     fnText = settings.text, fnImage = settings.image, fnHtml = settings.html, typ, chk, typ1, typ2,
-                    caption = file.name ? self.slug(file.name) : '', fileSize = (file.size || 0) / 20480,
+                    caption = file.name ? self.slug(file.name) : '', fileSize = (file.size || 0) / 1000,
                     fileExtExpr = '', previewData = $h.objUrl.createObjectURL(file), fileCount = 0, strTypes = '',
                     func, knownTypes = 0, isText, isHtml, isImage, txtFlag, processFileLoaded = function () {
                         var msg = msgProgress.setTokens({
@@ -3343,7 +3343,7 @@
                     continue;
                 }
                 fsize = config.siz;
-                if (fsize && fsize > minSize * 20480) {
+                if (fsize && fsize > minSize * 1000) {
                     self._getResizedImage(config, counter, numImgs);
                 }
                 self.loadedImages[i].validated = true;

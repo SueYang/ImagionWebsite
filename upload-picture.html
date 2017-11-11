@@ -142,10 +142,10 @@
     });
     $("#file-1").fileinput({
         theme: 'fa',
-        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        uploadUrl: 'http://imagion.me/images/uploads', // you must set a valid URL here else you will get an error
         allowedFileExtensions: ['jpg', 'png', 'gif'],
         overwriteInitial: false,
-        maxFileSize: 1000,
+        maxFileSize: 20480,
         maxFilesNum: 10,
         //allowedFileTypes: ['image', 'video', 'flash'],
         slugCallback: function (filename) {

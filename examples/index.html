@@ -59,7 +59,7 @@
     });
     $("#file-1").fileinput({
         theme: 'fa',
-        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        uploadUrl: ' /file-upload-batch/1', // you must set a valid URL here else you will get an error
         allowedFileExtensions: ['jpg', 'png', 'gif'],
         overwriteInitial: false,
         maxFileSize: 1000,
@@ -126,7 +126,7 @@
         });
         $("#kv-explorer").fileinput({
             'theme': 'explorer-fa',
-            'uploadUrl': '#',
+            'uploadUrl': './uploadtest',
             overwriteInitial: false,
             initialPreviewAsData: true,
             initialPreview: [

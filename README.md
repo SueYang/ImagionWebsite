@@ -1,3 +1,8 @@
+
+This is website design for capstone project "Imagion" using bootstrap-fileinput plugin.
+===================
+
+
 bootstrap-fileinput
 ===================
 
